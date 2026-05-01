@@ -1,81 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; padding: 20px; }
-        .main-container { max-width: 500px; margin: auto; }
-        .card { background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        h2 { margin-top: 0; color: #1a1a1a; font-size: 20px; text-align: center; }
-        label { display: block; margin-top: 12px; font-weight: 600; color: #4b5563; font-size: 14px; }
-        input, textarea { width: 100%; padding: 12px; margin: 6px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-size: 15px; }
-        textarea { height: 70px; resize: none; }
-        .btn-generate { width: 100%; background: #2563eb; color: white; padding: 12px; border: none; border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; margin-top: 15px; }
-        .btn-copy { width: 100%; background: #059669; color: white; padding: 10px; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; margin-top: 10px; display: none; }
-        .output-box { background: #1e293b; border: 1px solid #334155; padding: 15px; border-radius: 4px; margin-top: 20px; white-space: pre-wrap; font-family: 'Courier New', monospace; font-size: 12px; color: #f8fafc; display: none; overflow-x: auto; }
-    </style>
+    <title>Rao's Collection</title>
+    <meta name="description" content="Your destination for premium antique stones and rare natural gems.">
+    <meta property="og:title" content="Rao's Collection">
+    <meta property="og:image" content="https://raw.githubusercontent.com/BariraRao/meta-tag-generator/refs/heads/main/1777633600813.jpg">
+
 </head>
-<body>
 
-<div class="main-container">
-    <div class="card">
-        <h2>Professional Meta Tag Generator</h2>
+<body style="margin: 0; padding: 0; font-family: sans-serif; background-color: #f8fafc; color: #334155;">
+
+    <div style="background-color: #ffffff; padding: 40px 20px; text-align: center; border-bottom: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <h1 style="color: #1e40af; margin-bottom: 10px; font-size: 2.2rem;">Rao's Collection</h1>
+        <p style="font-size: 1rem; color: #64748b; margin-bottom: 25px;">
+            Premium antique stones and rare natural gems.
+        </p>
         
-        <label>Website Title</label>
-        <input type="text" id="siteTitle" placeholder="e.g. My Online Store">
-        
-        <label>Website Description</label>
-        <textarea id="siteDesc" placeholder="Brief description of your site"></textarea>
-        
-        <label>Image URL (for Graph/Social Media)</label>
-        <input type="text" id="siteImg" placeholder="https://example.com/image.jpg">
-        
-        <button class="btn-generate" onclick="generateTags()">Generate Tags</button>
-        
-        <div id="output" class="output-box"></div>
-        <button id="copyBtn" class="btn-copy" onclick="copyToClipboard()">Copy to Clipboard</button>
+        <img src="https://raw.githubusercontent.com/BariraRao/meta-tag-generator/refs/heads/main/1777633600813.jpg" 
+             style="width: 100%; max-width: 400px; border-radius: 15px; box-shadow: 0 10px 15px rgba(0,0,0,0.1);">
+
+        <br><br>
+        <a href="mailto:btwsamiyamalik@gmail.com?subject=Inquiry about Rao's Collection&body=Hello, I am interested in your antique stones collection." 
+   style="display: inline-block; background-color: #2563eb; color: white; padding: 12px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);">
+    Inquire via Email
+</a>
     </div>
-</div>
 
-<script>
-    function generateTags() {
-        const title = document.getElementById('siteTitle').value;
-        const desc = document.getElementById('siteDesc').value;
-        const img = document.getElementById('siteImg').value || 'https://example.com/default.jpg';
-
-        if(!title || !desc) {
-            alert("Please fill Title and Description");
-            return;
-        }
-
-        const metaCode = `<title>${title}</title>
-<meta name="description" content="${desc}">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="${title}">
-<meta property="og:description" content="${desc}">
-<meta property="og:image" content="${img}">
-
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="${title}">
-<meta property="twitter:description" content="${desc}">
-<meta property="twitter:image" content="${img}">`;
-
-        const outputDiv = document.getElementById('output');
-        const copyBtn = document.getElementById('copyBtn');
-        
-        outputDiv.innerText = metaCode;
-        outputDiv.style.display = "block";
-        copyBtn.style.display = "block";
-    }
-
-    function copyToClipboard() {
-        const text = document.getElementById('output').innerText;
-        navigator.clipboard.writeText(text).then(() => {
-            alert("Code copied to clipboard!");
-        });
-    }
-</script>
+    <div style="padding: 30px 20px; max-width: 600px; margin: 0 auto;">
+        <div style="background: white; padding: 15px; border-radius: 10px; border-left: 5px solid #1e40af; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <h3 style="margin: 0; color: #1e40af;">✨ 100% Authentic</h3>
+            <p style="margin: 5px 0 0 0; color: #64748b;">Certified natural stones.</p>
+        </div>
+    </div>
 
 </body>
 </html>
